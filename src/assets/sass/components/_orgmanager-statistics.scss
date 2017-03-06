@@ -1,0 +1,51 @@
+.orgmanager-statistic {
+    @include clearfix;
+    @include mod(total) {
+        font-size: setting($font-size, m);
+    }
+}
+
+.orgmanager-statistics__users {
+    @include font-sans;
+
+    top: .1em;
+    float: left;
+
+    color: color($gray, light);
+
+    font-size: setting($font-size, s);
+    text-transform: uppercase;
+}
+
+.orgmanager-statistics__orgs {
+    @include font-sans;
+
+    top: .1em;
+    float: left;
+
+    color: color($gray, light);
+
+    font-size: setting($font-size, s);
+    text-transform: uppercase;
+}
+
+.orgmanager-statistics__invites {
+    @include font-sans;
+
+    top: .1em;
+    float: left;
+
+    color: color($gray, light);
+
+    font-size: setting($font-size, s);
+    text-transform: uppercase;
+}
+
+.orgmanager-statistics__count {
+    @include font-sans-black;
+
+    float: right;
+    vertical-align: top;
+
+    color: color($yellow);
+}
