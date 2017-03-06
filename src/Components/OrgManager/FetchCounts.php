@@ -1,8 +1,8 @@
 <?php
 
-namespace OrgManager\OrgmanagerDashboard;
+namespace OrgManager\OrgmanagerDashboard\Components;
 
-use OrgManager\OrgmanagerDashboard\CountsFetched;
+use OrgManager\OrgmanagerDashboard\Events\CountsFetched;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use OrgManager\ApiClient\OrgManager;
