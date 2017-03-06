@@ -1,0 +1,30 @@
+{
+    "name": "orgmanager/orgmanager-dashboard",
+    "description": "OrgManager component for Spatie's Dashboard",
+    "keywords": [
+        "orgmanager",
+        "orgmanager-dashboard",
+        "m1guelpf"
+    ],
+    "homepage": "https://github.com/orgmanager/orgmanager-dashboard",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Miguel Piedrafita",
+            "email": "soy@miguelpiedrafita.com",
+            "homepage": "https://miguelpiedrafita.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OrgManager\\Skeleton\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
