@@ -46,7 +46,7 @@ yarn && yarn run dev
 
 ## Preview
 
-[REPLACE WITH IMAGE BEFORE RELEASE]
+![Preview](https://cloud.githubusercontent.com/assets/23558090/23669580/fbee62f8-0364-11e7-9e88-003c4c6dd6af.png)
 
 ## Changelog
 
