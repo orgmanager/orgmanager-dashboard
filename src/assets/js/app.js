@@ -13,7 +13,6 @@ import PackagistStatistics from './components/PackagistStatistics';
 import OrgManagerData from './components/OrgManagerData';
 import RainForecast from './components/RainForecast';
 import Twitter from './components/Twitter';
-import LaravelNews from './components/LaravelNews';
 
 new Vue({
 
@@ -30,7 +29,6 @@ new Vue({
         OrgManagerData,
         RainForecast,
         Twitter,
-        LaravelNews,
     },
 
     created() {
