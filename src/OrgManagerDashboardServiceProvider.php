@@ -1,10 +1,10 @@
 <?php
 
-namespace OrgManager\Skeleton;
+namespace OrgManager\Dashboard;
 
 use Illuminate\Support\ServiceProvider;
 
-class SkeletonServiceProvider extends ServiceProvider
+class OrgManagerServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
