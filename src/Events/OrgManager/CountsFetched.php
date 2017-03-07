@@ -1,6 +1,6 @@
 <?php
 
-namespace OrgManager\OrgmanagerDashboard\Events;
+namespace OrgManager\Dashboard\Events\OrgManager;
 
 use App\Events\DashboardEvent;
 
