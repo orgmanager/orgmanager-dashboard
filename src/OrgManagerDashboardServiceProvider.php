@@ -4,7 +4,7 @@ namespace OrgManager\Dashboard;
 
 use Illuminate\Support\ServiceProvider;
 
-class OrgManagerServiceProvider extends ServiceProvider
+class OrgManagerDashboardServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
