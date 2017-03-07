@@ -1,11 +1,11 @@
 <?php
 
-namespace OrgManager\OrgmanagerDashboard\Components;
+namespace OrgManager\Dashboard\Components\OrgManager;
 
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use OrgManager\ApiClient\OrgManager;
-use OrgManager\OrgmanagerDashboard\Events\CountsFetched;
+use OrgManager\Dashboard\Events\OrgManager\CountsFetched;
 
 class FetchCounts extends Command
 {
