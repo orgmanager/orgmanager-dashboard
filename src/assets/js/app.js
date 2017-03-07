@@ -10,8 +10,10 @@ import InternetConnection from './components/InternetConnection';
 import UptimeMonitor from './components/UptimeMonitor';
 import LastFm from './components/LastFm';
 import PackagistStatistics from './components/PackagistStatistics';
+import OrgManagerData from './components/OrgManagerData';
 import RainForecast from './components/RainForecast';
 import Twitter from './components/Twitter';
+import LaravelNews from './components/LaravelNews';
 
 new Vue({
 
@@ -25,8 +27,10 @@ new Vue({
         UptimeMonitor,
         LastFm,
         PackagistStatistics,
+        OrgManagerData,
         RainForecast,
         Twitter,
+        LaravelNews,
     },
 
     created() {
