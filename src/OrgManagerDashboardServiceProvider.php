@@ -3,6 +3,7 @@
 namespace OrgManager\Dashboard;
 
 use Illuminate\Support\ServiceProvider;
+use OrgManager\Dashboard\Components\OrgManager\FetchCounts;
 
 class OrgManagerDashboardServiceProvider extends ServiceProvider
 {
@@ -18,6 +19,9 @@ class OrgManagerDashboardServiceProvider extends ServiceProvider
                 __DIR__.'/assets/sass/components/_orgmanager-statistics.scss' => resource_path('assets/sass/components/_orgmanager-statistics.scss'),
                 __DIR__.'/assets/sass/app.scss' => resource_path('assets/sass/app.scss'),
             ], 'orgmanager-dashboard/assets');
+            $this->commands([
+              FetchCounts::class,
+            ]);
         }
     }
 
