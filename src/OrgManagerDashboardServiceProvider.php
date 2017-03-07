@@ -11,19 +11,10 @@ class OrgManagerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__.'/../config/skeleton.php' => config_path('skeleton.php'),
-            ], 'config');
-
-            /*
-            $this->loadViewsFrom(__DIR__.'/../resources/views', 'skeleton');
-
-            $this->publishes([
-                __DIR__.'/../resources/views' => base_path('resources/views/vendor/skeleton'),
-            ], 'views');
-            */
-        }
+        $this->publishes([
+        __DIR__.'/assets/js/components/OrgManagerData.vue' => public_path('wip/wip'),
+        __DIR__.'/assets/sass/components/_orgmanager-statistics.scss' => public_path('wip/wip'),
+    ], 'assets');
     }
 
     /**
@@ -31,6 +22,6 @@ class OrgManagerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'skeleton');
+        //
     }
 }
