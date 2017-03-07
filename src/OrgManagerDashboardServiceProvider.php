@@ -19,6 +19,9 @@ class OrgManagerDashboardServiceProvider extends ServiceProvider
                 __DIR__.'/assets/sass/components/_orgmanager-statistics.scss' => resource_path('assets/sass/components/_orgmanager-statistics.scss'),
                 __DIR__.'/assets/sass/app.scss' => resource_path('assets/sass/app.scss'),
             ], 'orgmanager-dashboard/assets');
+            $this->publishes([
+                __DIR__.'/../config/services.php' => config_path('services.php'),
+            ], 'orgmanager-dashboard/config');
             $this->commands([
               FetchCounts::class,
             ]);
@@ -30,6 +33,8 @@ class OrgManagerDashboardServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/services.php', 'services'
+        );
     }
 }
