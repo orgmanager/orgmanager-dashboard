@@ -8,10 +8,40 @@ This package adds an OrgManager Statistics tile similar to the Packagist Statist
 
 ## Installation
 
-You can install the package via composer:
+You can install this package via composer using this command:
 
 ``` bash
 composer require orgmanager/orgmanager-dashboard
+```
+Next, you must install the service provider:
+
+``` php
+// config/app.php
+'providers' => [
+    ...
+    OrgManager\Dashboard\OrgManagerDashboardServiceProvider::class,
+];
+```
+then, publish the assets&config using this command:
+
+``` bash
+php artisan vendor:publish --tag=orgmanager-dashboard/assets --force
+php artisan vendor:publish --tag=orgmanager-dashboard/config --force
+php artisan vendor:publish --tag=orgmanager-dashboard/commands --force
+```
+
+you also have to add your OrgManager token to .env
+
+```
+// .env
+...
+ORGMANAGER_TOKEN=your-token-here
+...
+```
+Finally, re-generate assets:
+
+``` bash
+yarn && yarn run dev
 ```
 
 ## Preview
