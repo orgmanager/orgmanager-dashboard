@@ -12,7 +12,7 @@ class OrgManagerDashboardServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-        __DIR__.'/assets/js/components/OrgManagerData.vue' => resource_path('assets/assets/js/components/OrgManagerData.vue'),
+        __DIR__.'/assets/js/components/OrgManagerData.vue' => resource_path('assets/js/components/OrgManagerData.vue'),
         __DIR__.'/assets/sass/components/_orgmanager-statistics.scss' => resource_path('assets/sass/components/_orgmanager-statistics.scss'),
     ], 'assets');
     }
