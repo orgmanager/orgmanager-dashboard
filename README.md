@@ -1,4 +1,4 @@
-# A OrgManager component for [Spatie's Dashboard](https://github.com/spatie/dashboard.spatie.be)
+# OrgManager component for [Spatie's Dashboard](https://github.com/spatie/dashboard.spatie.be)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/orgmanager/orgmanager-dashboard.svg?style=flat-square)](https://packagist.org/packages/orgmanager/orgmanager-dashboard)
 [![Software License](https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat-square)](LICENSE.md)
@@ -30,7 +30,7 @@ php artisan vendor:publish --tag=orgmanager-dashboard/config --force
 php artisan vendor:publish --tag=orgmanager-dashboard/commands --force
 ```
 
-you also have to add your OrgManager token to .env
+you also have to add your OrgManager token to the `.env` file
 
 ```
 // .env
@@ -50,15 +50,15 @@ yarn && yarn run dev
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+Please see [CHANGELOG.md](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Read our [CONTRIBUTING.md](CONTRIBUTING.md) for more details on how to help us.
 
 ## Security
 
-If you discover any security related issues, please email soy@miguelpiedrafita.com instead of using the issue tracker.
+If you find any security related issues, please send an email to soy@miguelpiedrafita.com instead of using the issue tracker.
 
 ## Credits
 
@@ -67,4 +67,4 @@ If you discover any security related issues, please email soy@miguelpiedrafita.c
 
 ## License
 
-This package is licensed under the Mozilla Public license. Please see [License File](LICENSE.md) for more information.
+This package is licensed under the Mozilla Public License ("MPL"). Please see [LICENSE.md](LICENSE.md) for more information.
