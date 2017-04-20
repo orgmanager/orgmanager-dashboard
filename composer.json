@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "orgmanager/orgmanager-api": "^1.1"
+        "orgmanager/orgmanager-api": "^2.0"
     },
     "autoload": {
         "psr-4": {

@@ -2,7 +2,6 @@
 
 namespace OrgManager\Dashboard\Components\OrgManager;
 
-use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use OrgManager\ApiClient\OrgManager;
 use OrgManager\Dashboard\Events\OrgManager\CountsFetched;
@@ -30,9 +29,7 @@ class FetchCounts extends Command
      */
     public function handle()
     {
-        $client = new Client();
-
-        $orgmanager = new OrgManager($client, config('services.orgmanager.token'));
+        $orgmanager = new OrgManager(config('services.orgmanager.token'));
 
         $counts = $orgmanager->getStats();
 
