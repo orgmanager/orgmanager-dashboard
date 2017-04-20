@@ -29,7 +29,7 @@ class FetchCounts extends Command
      */
     public function handle()
     {
-        $orgmanager = new OrgManager(config('services.orgmanager.token'));
+        $orgmanager = new OrgManager(config('services.orgmanager.token'), config('services.orgmanager.url'));
 
         $counts = $orgmanager->getStats();
 

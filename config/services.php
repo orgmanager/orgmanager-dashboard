@@ -46,6 +46,7 @@ return [
 
     'orgmanager' => [
         'token' => env('ORGMANAGER_TOKEN'),
+        'url' => env('ORGMANAGER_URL', 'https://orgmanager.miguelpiedrafita.com'),
     ],
 
 ];
